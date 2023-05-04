@@ -73,7 +73,8 @@ export class Connection extends Strophe.Connection {
         const options = {
             'mode': 'cors',
             'headers': {
-                'Accept': 'application/xrd+xml, text/xml'
+                'Accept': 'application/xrd+xml, text/xml',
+                'Access-Control-Allow-Origin': '*',
             }
         };
         const url = `https://${domain}/.well-known/host-meta`;
